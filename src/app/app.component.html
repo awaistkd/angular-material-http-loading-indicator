@@ -1,0 +1,4 @@
+<mat-progress-bar *ngIf="loaderService.isLoading | async" mode="indeterminate"></mat-progress-bar>
+
+<button mat-raised-button color="primary" (click)="makeAMockRequest()">Make a HTTP Request</button>
+<router-outlet></router-outlet>
